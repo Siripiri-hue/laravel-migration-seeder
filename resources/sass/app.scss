@@ -27,6 +27,18 @@ header {
     }
 }
 
+main {
+    padding: 20px 50px;
+
+    table {
+        margin: 0 auto;
+
+        th, td {
+            padding: 7px 7px;
+        }
+    }
+}
+
 footer {
     background-color: rgb(73, 73, 75);
     text-align: center;
