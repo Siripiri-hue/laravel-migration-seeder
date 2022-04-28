@@ -13,17 +13,20 @@ class TrainsTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        $train = new Train();
+        for ($i = 0; $i < 500; $i++)
+        {
+            $train = new Train();
 
-        $train->company = $faker->company(); 
-        $train->departure_station = $faker->city();
-        $train->arrival_station = $faker->city();
-        $train->departure_time = $faker->date() . ' ' . $faker->time();
-        $train->arrival_time = $faker->date() . ' ' . $faker->time();
-        $train->train_code = $faker->bothify('???#######');
-        $train->carriage_number = $faker->randomNumber(2, false);
-        $train->on_time = $faker->boolean();
-        $train->cancelled = $faker->boolean();
-        $train->save();
+            $train->company = $faker->company(); 
+            $train->departure_station = $faker->city();
+            $train->arrival_station = $faker->city();
+            $train->departure_time = $faker->date() . ' ' . $faker->time();
+            $train->arrival_time = $faker->date() . ' ' . $faker->time();
+            $train->train_code = $faker->bothify('???#######');
+            $train->carriage_number = $faker->randomDigit();
+            $train->on_time = $faker->boolean();
+            $train->cancelled = $faker->boolean();
+            $train->save();
+        }
     }
 }
