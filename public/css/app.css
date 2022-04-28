@@ -30,9 +30,14 @@ main table {
   margin: 0 auto;
 }
 
+main table caption {
+  font-size: 2rem;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
 main table th,
 main table td {
-  padding: 7px 7px;
+  padding: 10px 10px;
 }
 
 footer {

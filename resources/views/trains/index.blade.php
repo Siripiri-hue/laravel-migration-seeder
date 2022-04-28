@@ -2,8 +2,8 @@
 
 @section('mainContent')
 <main>
-    <h2>Departures</h2>
     <table>
+        <caption>Departures</caption>
         <th>Train code</th>
         <th>Departure station</th>
         <th>Arrival station</th>

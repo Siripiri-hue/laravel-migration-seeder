@@ -33,8 +33,13 @@ main {
     table {
         margin: 0 auto;
 
+        caption {
+            font-size: 2rem;
+            font-family: 'Shadows Into Light Two', cursive;
+        }
+
         th, td {
-            padding: 7px 7px;
+            padding: 10px 10px;
         }
     }
 }

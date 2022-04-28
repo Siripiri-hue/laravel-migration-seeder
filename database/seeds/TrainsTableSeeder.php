@@ -20,8 +20,8 @@ class TrainsTableSeeder extends Seeder
             $train->company = $faker->company(); 
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
-            $train->departure_time = $faker->date() . ' ' . $faker->time();
-            $train->arrival_time = $faker->date() . ' ' . $faker->time();
+            $train->departure_time = $faker->date('2022_m_d') . ' ' . $faker->time('H_i_00');
+            $train->arrival_time = $faker->date('2022_m_d') . ' ' . $faker->time('H_i_00');
             $train->train_code = $faker->bothify('???#######');
             $train->carriage_number = $faker->randomDigit();
             $train->on_time = $faker->boolean();
