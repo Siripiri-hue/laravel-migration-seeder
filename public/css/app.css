@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  background-image: url("https://cdn.akamai.steamstatic.com/steam/apps/1282590/ss_3e6f7ae741efc2e10dddb6ad1bff7785b7ceba92.jpg?t=1649847423");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  color: white;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 5rem;
+}
+
+footer {
+  background-color: rgb(73, 73, 75);
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
